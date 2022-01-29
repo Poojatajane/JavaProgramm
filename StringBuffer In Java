@@ -1,0 +1,35 @@
+package StringBuffer ;
+
+public class StringBuffer {
+
+public static void main (String[]args){
+
+StringBuffer sb = new StringBuffer ("I like painting");
+System.out.println("Original String: "+sb);
+
+StringBuffer sb1 = sb.append(" and dancing");
+System.out.println(sb1);
+
+String s = sb.subString(6);
+String s2 = s.toString();
+System.out.println(s2);
+
+int length = sb.length();
+int capacity = sb.capacity();
+System.out.println("Length : "+length);
+System.out.println("Capacity : "+capacity);
+
+sb.replace(2,7,"love");
+System.out.println("After replace a word like: "+sb);
+
+sb.insert(15, " and drawing");
+System.out.println("After insertion: "+sb);
+
+sb.reverse();
+System.out.println("Reverse String : "+sb);
+
+sb.deletecharAt(14);
+System.out.println("After deleting character at index 14 : "+sb );
+
+}
+}

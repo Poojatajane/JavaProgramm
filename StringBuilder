@@ -1,0 +1,33 @@
+public class StringBuilder {
+public static void main (String[]args){
+
+String s ;
+StringBuilder sb = new StringBuilder("I like watch movies");
+System.out.println(sb);
+
+StringBuilder sb1 = sb.append("based on real stories");  //append method is use for concantinate two strings of any other data type
+System.out.println(sb1);
+
+int a =10;
+s = sb1.append(" ").append(10).append("&").toString();
+System.out.println(s);
+
+StringBuilder sb2 = sb1.insert(7,"to");                //This method is use to inset new string at given index number
+System.out.println(sb2);
+
+StringBuilder sb3 = sb2.replace(2,6,"love");        //This method is use to replace string from start index to end index
+System.out.println(sb3);
+
+StringBuilder sb4 =sb3.delete(24,45);           // This methos is use to delete the string from start index to end index, 
+System.out.println(sb4);                       // deleteCharAt() method is use to delete character at given index number
+
+int length = sb5.length();                       //Length and capacity method use to identify the length and capacity of given string
+int Capacity = sb5.capacity();
+System.out.println("Length: "+length);
+System.out.println("Capacity: "+Capacity);
+
+StringBuilder sb6 =sb5.reverse();           //reverse() method is use to reverse the string
+System.out.println(sb6);
+
+}
+}

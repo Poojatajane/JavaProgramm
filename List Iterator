@@ -1,0 +1,37 @@
+package Collection ;
+
+import java.util.ArrayList ;
+
+public class ListIterator {
+
+public static void main(string[]args){
+
+List <String> list = new ArrayList <> ();
+list.add("Red");
+list.add("Orange");
+list.add("Green");
+list.add("Blue");
+list.add("yellow");
+System.out.println("List of colours:"+ list);
+
+ListIterator <String> iterator = list.listIterator ();
+System.out.println();
+
+System.out.println("Iteration in forward direction:");
+while(iterator.hasNext())
+{
+  int index = iterator.nextIndex();
+  String element = iterator.next();
+  System.out.println("Index: "+index + "Element: "+element);
+  }
+  System.out.println();
+  
+  System.out.println("Iteration in backward direction:");
+  while(iterator.hasPrevious())
+  {
+   int index = iterator.nextPrevious();
+   String element = iterator.previous();
+   System.out.println("Index:"+index + "Element: "+element);
+   }
+ }
+}

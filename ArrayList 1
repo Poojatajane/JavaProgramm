@@ -1,0 +1,40 @@
+package listprogramm
+
+import java.util.ArrayList ;
+
+public class ArrayList1 {
+
+public static void main(String [] args) {
+
+ArrayList <String> al = new ArrayList <String> ();
+
+al.add("Maths");
+al.add("English");
+al.add("Hindi");
+al.add("EVS");
+al.add("Science");
+
+System.out.println("List of subject:"+ al);
+
+String str = al.get(2);                                                  // It gives element  of index 2
+System.out.println("Element at index 2:"+str);
+
+boolean b = al.contains("Science");                                      //It returns boolean value - true because Arraylist contains science subject
+System.out.println("List contains science subject:"+ b);
+
+boolean b1 = al.contains("Computer");                                     //It returns boolean value - false because Arraylist do not contains computer subject
+System.out.println("List contains computer subject:"+b1);
+
+al.set(2, "Social science");                                              // It replace one subject by another at given index
+System.out.println(" Array after replacing subject:"+al);
+
+al.remove (4);                                                              // It remove element at given index
+System.out.println("Array after removing subject at given index:"+al);        
+
+al.add("Computer");                                                          
+System.out.println("Array after adding subject:"+al);
+
+
+
+}
+}
